@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/assi4HomePage.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>
+    <img src="img/lolHomepage/LOLlogo.png" alt="logo" style="height: 100px; width: 100px;">&nbsp;&nbsp;League of Legends College
+  </h2>
+</div>
+
+<div class="headerlist">
+  <ul class="ul1">
+    <li><a href="assi4lolpv.html" class="a1"><b>PV Page</b></a></li>
+    <li><a href="assi4Download.html" class="a1"><b>Download</b></a></li>
+    <li><a href="assi4ChampionList.html" class="a1"><b>Champions</b></a></li>
+    <li><a href="assi4SignIn.html" class="a1"><b>Sign Up</b></a></li>
+  </ul>
+</div>
+
+<div class="headervideo">
+  <video autoplay="autoplay" muted="muted" loop="loop">
+    <source src="video/lulu.mp4">
+  </video>
+</div>
+
+<div class="headerhighlight">
+  <h1 style="font-size: 70px; color: white">HIGH<br>LIGHT</h1><br>
+  <p style="background: white; font-size: 40px;"><b>2022.08.31</b></p><br>
+  <p style="color: #ffffff; font-size: 35px">Lulu use flash <br> ahead of Xayah <br> to avoid Xayah's <br> bladecaller, and
+    <br> Lulu eludes <br> Rakan's view <br> through grass.</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="row">
+        <h1 style="text-align: center; font-size: 80px;"><i>UNLOCK YOUR ABILITIES</i></h1>
+        <p style="text-align: center">Champions have five core abilities, two special spells, and up to seven items at a time.
+          <br> Figuring out the optimal ability order, summoner spells, and item build for your champion
+          <br> will help you succeed as a team.
+        </p>
+        <br>
+        <br>
+        <div class="abilityExpandingBox" onclick="openTab('abilities');" style="-webkit-text-fill-color: black">ABILITIES</div>
+        <div class="abilityExpandingBox" onclick="openTab('summonerSpells');" style="-webkit-text-fill-color: black">SUMMONER SPELLS</div>
+        <div class="abilityExpandingBox" onclick="openTab('items');" style="-webkit-text-fill-color: black">ITEMS</div>
+      </div>
+
+      <div id="abilities" class="containerTab" style="width: 99.9%;height: 360px;">
+        <span onclick="this.parentElement.style.display='abilityNone'" class="abilityClosebtn">&times;</span>
+        <p style="font-size: 20px;text-align: center;-webkit-text-fill-color: black;">
+          Most champions have a unique kit made up of five abilities: a Passive, three Basics, and
+          <br>an Ultimate. These abilities are mapped to the Q, W, E, and R keys. <br> <br> <br>
+          <img src="img/lolHomepage/abilities.png" alt="">
+        </p>
+      </div>
+
+      <div id="summonerSpells" class="containerTab" style="display:none;width: 99.9%;height: 360px;">
+        <span onclick="this.parentElement.style.display='abilityNone'" class="abilityClosebtn">&times;</span>
+        <p style="font-size: 20px;text-align: center;-webkit-text-fill-color: black;">
+          Summoner spells are abilities with unique effects that champions can use. They are
+          <br>mapped to the D and F keys. There are many spells, but a few commonly used ones are
+          <br>Flash, Teleport, Smite, and Ignite.<br> <br>
+          <img src="img/lolHomepage/summonerSpell.png" alt="">
+        </p>
+      </div>
+
+      <div id="items" class="containerTab" style="display:none;width: 99.9%;height: 360px;">
+        <span onclick="this.parentElement.style.display='abilityNone'" class="abilityClosebtn">&times;</span>
+        <p style="font-size: 20px;text-align: center;-webkit-text-fill-color: black;">
+          Items enhance your champion's performance, like granting faster movement, improved
+          <br>damage, and reduced ability cooldowns. Unlike Trinkets, they require gold to purchase.<br> <br> <br>
+          <img src="img/lolHomepage/item.png" alt="">
+        </p>
+      </div>
+
+      <script>
+        function openTab(abilityTabName) {
+          var i, x;
+          x = document.getElementsByClassName("abilityContainerTab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "abilityNone";
+          }
+          document.getElementById(abilityTabName).style.display = "block1";
+        }
+      </script>
+
+    </div>
+    <div class="card">
+      <div class="row">
+        <h1 style="text-align: center"><i>CHOOSE YOUR</i></h1>
+        <h1 style="text-align: center; font-size: 100px"><i>CHAMPION</i></h1>
+        <p style="text-align: center">Whether you like to dive straight into the fray, support your teammates, or <br> something in between, there's a spot for you on the Rift.</p>
+        <div class="expandingbox" onclick="openTab('b1');" style="background:#3E2A36;">
+          ASSASSINS
+        </div>
+        <div class="expandingbox" onclick="openTab('b2');" style="background:#030406;">
+          FIGHTER
+        </div>
+        <div class="expandingbox" onclick="openTab('b3');" style="background:#4B0220;">
+          MAGES
+        </div>
+        <div class="expandingbox" onclick="openTab('b4');" style="background:#212A49;">
+          MARKSMEN
+        </div>
+        <div class="expandingbox" onclick="openTab('b5');" style="background:#2673A1;">
+          SUPPORTS
+        </div>
+        <div class="expandingbox" onclick="openTab('b6');" style="background:#352448;">
+          TANKS
+        </div>
+      </div>
+
+      <div id="b1" class="containerTab" style="display:none;background:-webkit-linear-gradient(top,#3E2A36,#AD6151);width: 99.6%;height: 350px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p style="font-size: 30px;">
+          <a href="assi4Akali.html">
+            <img src="img/lolHomepage/RiotX_ChampionList_akali.jpg" alt="img" class="img1" style="float: left;margin: 5px;">
+          </a>
+          BACKGROUND STORY: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abandoning the Kinkou Order and her title
+          of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon
+          her people need. Though she holds onto all she learned from her master Shen,
+          she has pledged to defend Ionia from its enemies, one kill at a time. Akali
+          may strike in silence, but her message will be heard loud and clear: fear
+          the assassin with no master.
+        </p>
+      </div>
+
+      <div id="b2" class="containerTab" style="display:none;background:-webkit-linear-gradient(top,#030406,#CBAE8E);width: 99.6%;height: 350px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p style="font-size: 30px;">
+          <a href="assi4Darius.html">
+            <img src="img/lolHomepage/RiotX_ChampionList_darius.jpg" class="img1" alt="img" style="float: left;margin: 5px;">
+          </a>
+          BACKGROUND STORY: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is no greater symbol of Noxian might
+          than Darius, the nation's most feared and battle-hardened commander. Rising
+          from humble origins to become the Hand of Noxus, he cleaves through the
+          empire's enemies many of them Noxians themselves. Knowing that he never
+          doubts his cause is just, and never hesitates once his axe is raised, those
+          who stand against the leader of the Trifarian Legion can expect no mercy.
+        </p>
+      </div>
+
+      <div id="b3" class="containerTab" style="display:none;background:-webkit-linear-gradient(top,#4B0220,#903C53);width: 99.6%;height: 350px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p style="font-size: 30px;">
+          <a href="assi4Ahri.html">
+            <img src="img/lolHomepage/RiotX_ChampionList_ahri.jpg" alt="img" class="img1" style="float: left;margin: 5px;">
+          </a>
+          BACKGROUND STORY: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Innately connected to the latent power
+          of Runeterra, Ahri is a vastaya who can reshape magic into orbs of raw energy.
+          She revels in toying with her prey by manipulating their emotions before devouring
+          their life essence. Despite her predatory nature, Ahri retains a sense of empathy
+          as she receives flashes of memory from each soul she consumes.
+        </p>
+      </div>
+
+      <div id="b4" class="containerTab" style="display:none;background:-webkit-linear-gradient(top,#212A49,#30B8F4);width: 99.6%;height: 350px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p style="font-size: 30px;">
+          <a href="assi4Ashe.html">
+            <img src="img/lolHomepage/RiotX_ChampionList_ashe.jpg" alt="img" class="img1" style="float: left;margin: 5px;">
+
+          </a>
+          BACKGROUND STORY: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iceborn warmother of the Avarosan tribe,
+          Ashe commands the most populous horde in the north. Stoic, intelligent, and
+          idealistic, yet uncomfortable with her role as leader, she taps into the
+          ancestral magics of her lineage to wield a bow of True Ice. With her people's
+          belief that she is the mythological hero Avarosa reincarnated, Ashe hopes to
+          unify the Freljord once more by retaking their ancient, tribal lands.
+        </p>
+      </div>
+
+      <div id="b5" class="containerTab" style="display:none;background:-webkit-linear-gradient(top,#2673A1,#5DB3AE);width: 99.6%;height: 350px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p style="font-size: 28px;">
+          <a href="assi4Janna.html">
+            <img src="img/lolHomepage/RiotX_ChampionList_janna.jpg" alt="img" class="img1" style="float: left;margin: 5px;">
+          </a>
+          BACKGROUND STORY: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Armed with the power of Runeterra's gales,
+          Janna is a mysterious, elemental wind spirit who protects the dispossessed of Zaun.
+          Some believe she was brought into existence by the pleas of Runeterra's sailors who
+          prayed for fair winds as they navigated treacherous waters and braved rough tempests.
+          Her favor and protection has since been called into the depths of Zaun, where Janna has
+          become a beacon of hope to those in need. No one knows where or when she will appear,
+          but more often than not, she's come to help.
+        </p>
+      </div>
+
+      <div id="b6" class="containerTab" style="display:none;background:-webkit-linear-gradient(top,#352448,#967F60);width: 99.6%;height: 350px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p style="font-size: 30px">
+          <a href="assi4Alistar.html">
+            <img src="img/lolHomepage/RiotX_ChampionList_alistar.jpg" alt="img" class="img1" style="float: left;margin: 5px;">
+          </a>
+          BACKGROUND STORY: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always a mighty warrior with a fearsome reputation, Alistar seeks
+          revenge for the death of his clan at the hands of the Noxian empire. Though he was enslaved
+          and forced into the life of a gladiator, his unbreakable will was what kept him from truly
+          becoming a beast. Now, free of the chains of his former masters, he fights in the name of the
+          downtrodden and the disadvantaged, his rage as much a weapon as his horns, hooves and fists.</p>
+      </div>
+
+      <script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+      </script>
+
+    </div>
+
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>STAR GUARDIAN</h2>
+      <p>AUTHOR: RIOT CASHMIIR</p>
+      <a href="https://www.leagueoflegends.com/en-us/news/lore/previously-on-star-guardian/">
+        <img class="img1" src="img/lolHomepage/Galaxies_Lux_Short_Story_Banner_v2.jpg" alt="img" style="height: 100%;width: 100%">
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>THE BOYS AND BOMBOLINI</h2>
+      <p>BY JARED ROSEN</p>
+      <a href="https://universe.leagueoflegends.com/en_US/story/the-boys-and-bombolini/">
+        <img class="img1" src="img/lolHomepage/tf-graves-pride-banner.jpg" alt="img" style="height: 100%;width: 100%">
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>RENATA GLASC</h2>
+      <a href="https://universe.leagueoflegends.com/en_US/champion/renataglasc/">
+        <img class="img1" src="img/lolHomepage/Renata_Bio_T2_thumbnail.jpg" alt="img" style="height: 100%;width: 100%">
+      </a>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+  <p style="color: white;">designed by 201229SkyZhou</p>
+  <hr>
+  <p style="color: white;">reference from "https://www.leagueoflegends.com/en-us/"</p>
+</div>
+
+</body>
+</html>

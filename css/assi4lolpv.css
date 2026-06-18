@@ -1,0 +1,42 @@
+body {
+  font-family: Garamond;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-areas:
+    "header header"
+    "r2c1 r2c2"
+    "r3c1 r3c2";
+}
+
+header{
+  grid-area: header;
+  border: 0px;
+}
+
+.welcome{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.welcomebtn{
+  height: 50px;
+  width: 200px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #0BC6E3;
+  border: 0;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-family: Garamond;
+  transform: scale(1,1);
+  cursor: pointer;
+}
+
+.welcomebtn:hover{
+  transform: scale(1.1,1.1);
+}

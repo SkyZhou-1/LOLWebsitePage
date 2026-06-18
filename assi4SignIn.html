@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/assi4SignIn.css">
+  <title>Sign In</title>
+  <style>
+    .bkpic{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      z-index: -10;
+      zoom: 1;
+      background-color: #fff;
+      background-image: url("img/lolHomepage/Janna_46.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-position: center 0;
+    }
+  </style>
+</head>
+<body>
+<div class="bkpic">
+<div class="top">
+    <ul>
+      <li><a href="assi4HomePage.html">Home Page</a></li>
+      <li><a href="assi4ChampionList.html">Champions</a></li>
+      <li><a href="assi4SignIn.html">Sign in</a></li>
+      <li><a href="assi4LogIn.html">Log in</a></li>
+    </ul>
+  </div>
+  <div class="LOLname">
+    <img src="img/lolHomepage/loltitle.png" alt="name" width="250px" height="148px"> <br>
+    <img src="img/lolHomepage/riotlogo.png" alt="logo" class="riotlogo" width="150px" height="150px">
+  </div>
+  <div class="formPage">
+    <form action="" method="post">
+      <h1 class="formHeader">YOUR LEGEND <br> STARTS HERE</h1>
+      <p class="formSubTitle">FIRST, LET'S GET YOUR INFORMATION</p>
+      <img src="img/lolHomepage/divider.png" alt="img" width="100%" height="36px">
+      <h3 class="formText">NAME: &nbsp;&nbsp;<input type="text" name="name"></h3> <br>
+      <h3 class="formText">USER NAME: &nbsp;&nbsp;<input type="text" name="username"></h3> <br>
+      <h3 class="formText">DATE OF BIRTH: &nbsp;&nbsp;<input type="date" name="dob"></h3> <br>
+      <h3 class="formText">GENDER: &nbsp;&nbsp;
+        <select name="sex">
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+          <option value="TRANSGENDER">TRANSGENDER</option>
+        </select>
+      </h3> <br>
+      <h3 class="formText">EMAIL: &nbsp;&nbsp;<input type="email" name="email"></h3> <br>
+      <h3 class="formText">MOBILE: &nbsp;&nbsp;<input type="tel" name="telphone"></h3> <br>
+      <h3 class="formText">PASSWORD: &nbsp;&nbsp;<input type="password" name="password"></h3> <br>
+      <h3 class="formText">CONFIRM PASSWORD: &nbsp;&nbsp;<input type="password" name="conpassword"></h3> <br>
+      <h3 class="formText" style="text-align: center"><input type="submit" style="font-family: Garamond;" value="CLICK HERE TO SUBMIT"></h3> <br>
+    </form>
+  </div>
+</div>
+</body>
+</html>

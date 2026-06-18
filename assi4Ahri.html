@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akali</title>
+  <link rel="stylesheet" href="css/assi4Champion.css">
+</head>
+<body>
+<div class="Layout">
+  <div class="top">
+    <ul>
+      <li><a href="assi4HomePage.html">Home Page</a></li>
+      <li><a href="assi4ChampionList.html">Champions</a></li>
+      <li><a href="assi4SignIn.html">Sign in</a></li>
+      <li><a href="assi4LogIn.html">Log in</a></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img id="img" src="img/ahri/Ahri_0.jpg">
+    <button id="btnNext" class="leftbtn"></button>
+    <button id="btnPrev" class="rightbtn"></button>
+    <h3 class="ChampionTitle"><i>THE NINE-TAILED FOX</i></h3>
+    <h1 class="ChampionName">AHRI</h1>
+    <div style="background-color: black;height: 300px;width: 100%;float: top;">
+      <h2 style="color: white; font-size: 70px;"><i>Abilities of Ahri</i></h2>
+
+      <div class="row">
+        <div class="column" onclick="openTab('P');" style="background-color: black;">
+          <img src="img/ahri/Ahri_SoulEater2.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('Q');" style="background-color: black;">
+          <img src="img/ahri/AhriOrbofDeception.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('W');" style="background-color: black;">
+          <img src="img/ahri/AhriFoxFire.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('E');" style="background-color: black;">
+          <img src="img/ahri/AhriSeduce.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('R');" style="background-color: black;">
+          <img src="img/ahri/AhriTumble.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+      </div>
+
+      <div id="P" class="containerTab" style="background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ahri/ability_0103_P1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">PASSIVE</h1>
+        <h2 style="font-size: 50px">ESSENCE THEFT</h2><br>
+        <p style="font-size: 30px">After killing 9 minions or monsters, Ahri heals. After
+          taking down an enemy champion, Ahri heals for a greater amount.</p>
+        </p>
+      </div>
+
+      <div id="Q" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ahri/ability_0103_Q1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">Q</h1>
+        <h2 style="font-size: 50px">ORB OF DECEPTION</h2><br>
+        <p style="font-size: 30px">Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back.</p>
+        </p>
+      </div>
+
+      <div id="W" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ahri/ability_0103_W1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">W</h1>
+        <h2 style="font-size: 50px">FOX-FIRE</h2><br>
+        <p style="font-size: 30px">Ahri gains a brief burst of Move Speed and releases three
+          fox-fires, that lock onto and attack nearby enemies.</p>
+        </p>
+      </div>
+
+      <div id="E" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ahri/ability_0103_E1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">E</h1>
+        <h2 style="font-size: 50px">CHARM</h2><br>
+        <p style="font-size: 30px">Ahri blows a kiss that damages and charms an enemy it encounters, instantly stopping
+          movement abilities and causing them to walk harmlessly towards her.</p>
+        </p>
+      </div>
+
+      <div id="R" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ahri/ability_0103_R1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">R</h1>
+        <h2 style="font-size: 50px">SPIRIT RUSH</h2><br>
+        <p style="font-size: 30px">Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush can be
+          cast up to three times before going on cooldown, and gains additional recasts when taking down enemy champions.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+</body>
+
+<script>
+  var arr = ["img/ahri/Ahri_0.jpg", "img/ahri/Ahri_1.jpg", "img/ahri/Ahri_2.jpg", "img/ahri/Ahri_3.jpg", "img/ahri/Ahri_4.jpg",
+    "img/ahri/Ahri_5.jpg", "img/ahri/Ahri_6.jpg", "img/ahri/Ahri_7.jpg", "img/ahri/Ahri_14.jpg", "img/ahri/Ahri_15.jpg",
+    "img/ahri/Ahri_16.jpg", "img/ahri/Ahri_17.jpg", "img/ahri/Ahri_27.jpg", "img/ahri/Ahri_28.jpg", "img/ahri/Ahri_42.jpg", "img/ahri/Ahri_66.jpg", ];
+  var btns = document.querySelectorAll('button');
+  var img = document.querySelectorAll('img')[0];
+
+  var num = 0;
+  btns[1].onclick = function(){
+    console.log(btns[1]);
+    num++;
+    if(num  > 15){
+      num = 0;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+  }
+  btns[0].onclick = function(){
+    console.log(btns[0]);
+    num--;
+    if(num  < 0){
+      num = 15;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+
+  }
+</script>
+</html>

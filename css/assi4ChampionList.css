@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Garamond";
+}
+
+.top{
+  position: fixed;
+  z-index: 3;
+  float: left;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+.top ul{
+  width: auto;
+  list-style-type: none;
+  white-space:nowrap;
+  overflow: hidden;
+  margin-left: 5%;
+  padding: 0;
+
+}
+.top li {
+  float:left;
+  margin-right:5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.top li a{
+  margin-top: 10px;
+  display: block;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 3px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.top li a:hover{
+  background-color: rgb(255, 255, 255,0.2);
+  backdrop-filter: blur(4px);
+}
+
+.championLayout{
+
+}
+
+.championTable{
+  margin-top: 60px;
+  float: left;
+  width: 88%;
+  margin-left: 6%;
+}
+
+.championListName{
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  text-align: left;
+  margin-top: -8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 55px;
+  width: 250px;
+}
+
+img{
+  transition: all 0.4s;
+  transform: scale(1,1);
+}
+
+img:hover{
+  transform: scale(0.97,0.97);
+
+}
+
+

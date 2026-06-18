@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  font-family: "Garamond";
+}
+
+.top{
+  position: fixed;
+  z-index: 3;
+  float: left;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+.top ul{
+  width: auto;
+  list-style-type: none;
+  white-space:nowrap;
+  overflow: hidden;
+  margin-left: 5%;
+  padding: 0;
+
+}
+.top li {
+  float:left;
+  margin-right:5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.top li a{
+  margin-top: 10px;
+  display: block;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 3px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.top li a:hover{
+  background-color: rgb(255, 255, 255,0.2);
+  backdrop-filter: blur(4px);
+}
+
+.ChampionBkimg{
+  height: auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.Layout{
+  position: relative;
+}
+
+.ChampionName{
+  text-align: center;
+  position: relative;
+  float: top;
+  font-size: 200px;
+  color: white;
+}
+
+.ChampionTitle{
+  text-align: center;
+  float: top;
+  margin-top: 900px;
+  position: relative;
+  color: white;
+  font-size: 50px;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.leftbtn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255,0.5);
+}
+
+.rightbtn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255,0.5);
+}
+
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.leftbtn{
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 400px;
+  border: 0;
+  margin-top: 230px;
+  background-color: rgb(255, 255, 255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.rightbtn{
+  float: right;
+  position: relative;
+  width: 100px;
+  height: 400px;
+  border: 0;
+  margin-top: 230px;
+  background-color: rgb(255, 255, 255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.column {
+  float: left;
+  width: 20%;
+  height: 100px;
+  cursor: pointer;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akali</title>
+  <link rel="stylesheet" href="css/assi4Champion.css">
+</head>
+<body>
+<div class="Layout">
+  <div class="top">
+    <ul>
+      <li><a href="assi4HomePage.html">Home Page</a></li>
+      <li><a href="assi4ChampionList.html">Champions</a></li>
+      <li><a href="assi4SignIn.html">Sign in</a></li>
+      <li><a href="assi4LogIn.html">Log in</a></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img id="img" src="img/ashe/Ashe_0.jpg">
+    <button id="btnNext" class="leftbtn"></button>
+    <button id="btnPrev" class="rightbtn"></button>
+    <h3 class="ChampionTitle"><i>THE FROST ARCHER</i></h3>
+    <h1 class="ChampionName">ASHE</h1>
+    <div style="background-color: black;height: 300px;width: 100%;float: top;">
+      <h2 style="color: white; font-size: 70px;"><i>Abilities of Ashe</i></h2>
+
+      <div class="row">
+        <div class="column" onclick="openTab('P');" style="background-color: black;">
+          <img src="img/ashe/AsheP.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('Q');" style="background-color: black;">
+          <img src="img/ashe/AsheQ.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('W');" style="background-color: black;">
+          <img src="img/ashe/AsheW.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('E');" style="background-color: black;">
+          <img src="img/ashe/AsheE.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('R');" style="background-color: black;">
+          <img src="img/ashe/AsheR.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+      </div>
+
+      <div id="P" class="containerTab" style="background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ashe/ability_0022_P1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">PASSIVE</h1>
+        <h2 style="font-size: 50px">
+          FROST SHOT
+        </h2><br>
+        <p style="font-size: 30px">
+          Ashe's attacks slow their target, causing her to deal increased damage to these targets. Ashe's critical strikes deal no bonus damage but apply an empowered slow to the target.
+        </p>
+        </p>
+      </div>
+
+      <div id="Q" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ashe/ability_0022_Q1.webm">
+          </video>
+          <br>
+        <h1 style="font-size: 100px">Q</h1>
+        <h2 style="font-size: 50px">
+          RANGER'S FOCUS
+        </h2><br>
+        <p style="font-size: 30px">
+          Ashe builds up Focus by attacking. At maximum Focus, Ashe can cast Ranger's Focus to consume all stacks of Focus, temporarily increasing her Attack Speed and transforming her basic attack into a powerful flurry attack for the duration.
+        </p>
+        </p>
+      </div>
+
+      <div id="W" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ashe/ability_0022_W1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">W</h1>
+        <h2 style="font-size: 50px">
+          VOLLEY
+        </h2><br>
+        <p style="font-size: 30px">
+          Ashe fires arrows in a cone for increased damage. Also applies Frost Shot.
+        </p>
+        </p>
+      </div>
+
+      <div id="E" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ashe/ability_0022_E1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">E</h1>
+        <h2 style="font-size: 50px">
+          HAWKSHOT
+        </h2><br>
+        <p style="font-size: 30px">
+          Ashe sends her Hawk Spirit on a scouting mission anywhere on the map.
+        </p>
+        </p>
+      </div>
+
+      <div id="R" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/ashe/ability_0022_R1.webm">
+          </video>
+        <h1 style="font-size: 100px">R</h1>
+        <h2 style="font-size: 50px">
+          ENCHANTED CRYSTAL ARROW
+        </h2><br>
+        <p style="font-size: 30px">
+          Ashe fires a missile of ice in a straight line. If the arrow collides with an enemy Champion, it deals damage and stuns the Champion, stunning for longer the farther arrow has traveled. In addition, surrounding enemy units take damage and are slowed.
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+</body>
+
+<script>
+  var arr = ["img/ashe/Ashe_0.jpg", "img/ashe/Ashe_1.jpg", "img/ashe/Ashe_2.jpg", "img/ashe/Ashe_3.jpg", "img/ashe/Ashe_4.jpg",
+    "img/ashe/Ashe_5.jpg", "img/ashe/Ashe_6.jpg", "img/ashe/Ashe_7.jpg", "img/ashe/Ashe_8.jpg", "img/ashe/Ashe_9.jpg",
+    "img/ashe/Ashe_10.jpg", "img/ashe/Ashe_11.jpg", "img/ashe/Ashe_12.jpg", "img/ashe/Ashe_13.jpg", "img/ashe/Ashe_14.jpg"];
+  var btns = document.querySelectorAll('button');
+  var img = document.querySelectorAll('img')[0];
+
+  var num = 0;
+  btns[1].onclick = function(){
+    console.log(btns[1]);
+    num++;
+    if(num  > 14){
+      num = 0;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+  }
+  btns[0].onclick = function(){
+    console.log(btns[0]);
+    num--;
+    if(num  < 0){
+      num = 14;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+
+  }
+</script>
+</html>

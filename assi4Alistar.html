@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akali</title>
+  <link rel="stylesheet" href="css/assi4Champion.css">
+</head>
+<body>
+<div class="Layout">
+  <div class="top">
+    <ul>
+      <li><a href="assi4HomePage.html">Home Page</a></li>
+      <li><a href="assi4ChampionList.html">Champions</a></li>
+      <li><a href="assi4SignIn.html">Sign in</a></li>
+      <li><a href="assi4LogIn.html">Log in</a></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img id="img" src="img/alistar/Alistar_0.jpg">
+    <button id="btnNext" class="leftbtn"></button>
+    <button id="btnPrev" class="rightbtn"></button>
+    <h3 class="ChampionTitle"><i>THE MINOTAUR</i></h3>
+    <h1 class="ChampionName">ALISTAR</h1>
+    <div style="background-color: black;height: 300px;width: 100%;float: top;">
+      <h2 style="color: white; font-size: 70px;"><i>Abilities of Alistar</i></h2>
+
+      <div class="row">
+        <div class="column" onclick="openTab('P');" style="background-color: black;">
+          <img src="img/alistar/AlistarP.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('Q');" style="background-color: black;">
+          <img src="img/alistar/AlistarQ.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('W');" style="background-color: black;">
+          <img src="img/alistar/AlistarW.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('E');" style="background-color: black;">
+          <img src="img/alistar/AlistarE.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('R');" style="background-color: black;">
+          <img src="img/alistar/AlistarR.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+      </div>
+
+      <div id="P" class="containerTab" style="background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/alistar/ability_0012_P1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">PASSIVE</h1>
+        <h2 style="font-size: 50px">
+          TRIUMPHANT ROAR
+        </h2><br>
+        <p style="font-size: 30px">
+          Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself all nearby allied champions.
+        </p>
+        </p>
+      </div>
+
+      <div id="Q" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/alistar/ability_0012_Q1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">Q</h1>
+        <h2 style="font-size: 50px">
+          PULVERIZE
+        </h2><br>
+        <p style="font-size: 30px">
+          Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.
+        </p>
+        </p>
+      </div>
+
+      <div id="W" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/alistar/ability_0012_W1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">W</h1>
+        <h2 style="font-size: 50px">
+          HEADBUTT
+        </h2><br>
+        <p style="font-size: 30px">
+          Alistar rams a target with his head, dealing damage and knocking the target back.
+        </p>
+        </p>
+      </div>
+
+      <div id="E" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/alistar/ability_0012_E1.webm">
+          </video>
+          <br>
+        <h1 style="font-size: 100px">E</h1>
+        <h2 style="font-size: 50px">
+          TRAMPLE
+        </h2><br>
+        <p style="font-size: 30px">
+          Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them.
+        </p>
+        </p>
+      </div>
+
+      <div id="R" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/alistar/ability_0012_R1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">R</h1>
+        <h2 style="font-size: 50px">
+          UNBREAKABLE WILL
+        </h2><br>
+        <p style="font-size: 30px">
+          Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration.
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+</body>
+
+<script>
+  var arr = ["img/alistar/Alistar_0.jpg", "img/alistar/Alistar_1.jpg", "img/alistar/Alistar_2.jpg", "img/alistar/Alistar_3.jpg", "img/alistar/Alistar_4.jpg",
+    "img/alistar/Alistar_5.jpg", "img/alistar/Alistar_6.jpg", "img/alistar/Alistar_7.jpg", "img/alistar/Alistar_8.jpg", "img/alistar/Alistar_9.jpg",
+    "img/alistar/Alistar_10.jpg", "img/alistar/Alistar_11.jpg", "img/alistar/Alistar_12.jpg", "img/alistar/Alistar_13.jpg", "img/alistar/Alistar_14.jpg"];
+  var btns = document.querySelectorAll('button');
+  var img = document.querySelectorAll('img')[0];
+
+  var num = 0;
+  btns[1].onclick = function(){
+    console.log(btns[1]);
+    num++;
+    if(num  > 14){
+      num = 0;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+  }
+  btns[0].onclick = function(){
+    console.log(btns[0]);
+    num--;
+    if(num  < 0){
+      num = 14;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+
+  }
+</script>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akali</title>
+  <link rel="stylesheet" href="css/assi4Champion.css">
+</head>
+<body>
+<div class="Layout">
+  <div class="top">
+    <ul>
+      <li><a href="assi4HomePage.html">Home Page</a></li>
+      <li><a href="assi4ChampionList.html">Champions</a></li>
+      <li><a href="assi4SignIn.html">Sign in</a></li>
+      <li><a href="assi4LogIn.html">Log in</a></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img id="img" src="img/akali/Akali_0.jpg">
+    <button id="btnNext" class="leftbtn"></button>
+    <button id="btnPrev" class="rightbtn"></button>
+    <h3 class="ChampionTitle"><i>THE ROGUE ASSASSIN</i></h3>
+    <h1 class="ChampionName">AKALI</h1>
+    <div style="background-color: black;height: 300px;width: 100%;float: top;">
+      <h2 style="color: white; font-size: 70px;"><i>Abilities of Akali</i></h2>
+
+      <div class="row">
+        <div class="column" onclick="openTab('P');" style="background-color: black;">
+          <img src="img/akali/Akali_P.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('Q');" style="background-color: black;">
+          <img src="img/akali/AkaliQ.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('W');" style="background-color: black;">
+          <img src="img/akali/AkaliW.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('E');" style="background-color: black;">
+          <img src="img/akali/AkaliE.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('R');" style="background-color: black;">
+          <img src="img/akali/AkaliR.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+      </div>
+
+      <div id="P" class="containerTab" style="background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/akali/ability_0084_P1.webm">
+          </video>
+          <br><br><br><br><br>
+          <h1 style="font-size: 100px">PASSIVE</h1>
+          <h2 style="font-size: 50px">ASSASSIN'S MARK </h2><br>
+          <p style="font-size: 30px">Dealing spell damage to a champion creates a ring of energy around them.
+            Exiting that ring empowers Akali's next Attack with bonus range and damage.</p>
+        </p>
+      </div>
+
+      <div id="Q" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/akali/ability_0084_Q1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">Q</h1>
+        <h2 style="font-size: 50px">FIVE POINT STRIKE</h2><br>
+        <p style="font-size: 30px">Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing.</p>
+        </p>
+      </div>
+
+      <div id="W" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/akali/ability_0084_W1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">W</h1>
+        <h2 style="font-size: 50px">TWILIGHT SHROUD</h2><br>
+        <p style="font-size: 30px">Akali drops a cover of smoke and briefly gains Move Speed. While inside the shroud,
+          Akali becomes invisible and unable to be selected by enemy spells and attacks. Attacking
+          or using abilities will briefly reveal her.</p>
+        </p>
+      </div>
+
+      <div id="E" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/akali/ability_0084_E1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">E</h1>
+        <h2 style="font-size: 50px">SHURIKEN FLIP</h2><br>
+        <p style="font-size: 30px">Flip backward and fire a shuriken forward, dealing magic damage. The first enemy
+          or smoke cloud hit is marked. Re-cast to dash to the marked target, dealing additional damage.</p>
+        </p>
+      </div>
+
+      <div id="R" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/akali/ability_0084_R1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">R</h1>
+        <h2 style="font-size: 50px">PERFECT EXECUTION</h2><br>
+        <p style="font-size: 30px">Akali leaps in a direction, damaging enemies
+          she strikes. Re-cast: Akali dashes in a direction, executing all enemies she strikes.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+</body>
+
+<script>
+  var arr = ["img/akali/Akali_0.jpg", "img/akali/Akali_1.jpg", "img/akali/Akali_2.jpg", "img/akali/Akali_3.jpg", "img/akali/Akali_4.jpg", "img/akali/Akali_5.jpg",
+    "img/akali/Akali_6.jpg", "img/akali/Akali_7.jpg", "img/akali/Akali_8.jpg", "img/akali/Akali_9.jpg", "img/akali/Akali_11.jpg", "img/akali/Akali_12.jpg",
+    "img/akali/Akali_13.jpg", "img/akali/Akali_32.jpg", "img/akali/Akali_50.jpg", "img/akali/Akali_61.jpg" ];
+  var btns = document.querySelectorAll('button');
+  var img = document.querySelectorAll('img')[0];
+
+  var num = 0;
+  btns[1].onclick = function(){
+    console.log(btns[1]);
+    num++;
+    if(num  > 15){
+      num = 0;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+  }
+  btns[0].onclick = function(){
+    console.log(btns[0]);
+    num--;
+    if(num  < 0){
+      num = 15;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+
+  }
+</script>
+</html>

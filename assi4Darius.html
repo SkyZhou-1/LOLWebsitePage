@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akali</title>
+  <link rel="stylesheet" href="css/assi4Champion.css">
+</head>
+<body>
+<div class="Layout">
+  <div class="top">
+    <ul>
+      <li><a href="assi4HomePage.html">Home Page</a></li>
+      <li><a href="assi4ChampionList.html">Champions</a></li>
+      <li><a href="assi4SignIn.html">Sign in</a></li>
+      <li><a href="assi4LogIn.html">Log in</a></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img id="img" src="img/darius/Darius_0.jpg">
+    <button id="btnNext" class="leftbtn"></button>
+    <button id="btnPrev" class="rightbtn"></button>
+    <h3 class="ChampionTitle"><i>THE HAND OF NOXUS</i></h3>
+    <h1 class="ChampionName">DARIUS</h1>
+    <div style="background-color: black;height: 300px;width: 100%;float: top;">
+      <h2 style="color: white; font-size: 70px;"><i>Abilities of Darius</i></h2>
+
+      <div class="row">
+        <div class="column" onclick="openTab('P');" style="background-color: black;">
+          <img src="img/darius/DariusP.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('Q');" style="background-color: black;">
+          <img src="img/darius/DariusQ.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('W');" style="background-color: black;">
+          <img src="img/darius/DariusW.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('E');" style="background-color: black;">
+          <img src="img/darius/DariusE.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+        <div class="column" onclick="openTab('R');" style="background-color: black;">
+          <img src="img/darius/DariusR.png" alt="" style="height: 100px; width: 100px;float: left;margin-left: 100px;">
+        </div>
+      </div>
+
+      <div id="P" class="containerTab" style="background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/darius/ability_0122_P1.webm">
+          </video>
+          <br>
+        <h1 style="font-size: 100px">PASSIVE</h1>
+        <h2 style="font-size: 50px">
+          HEMORRHAGE
+        </h2><br>
+        <p style="font-size: 30px">
+          Darius' attacks and damaging abilities cause enemies to bleed for physical damage over 5 seconds, stacking up to 5 times. Darius enrages and gains massive Attack Damage when his target reaches max stacks.
+        </p>
+        </p>
+      </div>
+
+      <div id="Q" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/darius/ability_0122_Q1.webm">
+          </video>
+          <br>
+        <h1 style="font-size: 100px">Q</h1>
+        <h2 style="font-size: 50px">
+          DECIMATE
+        </h2><br>
+        <p style="font-size: 30px">
+          Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions and large monsters hit by the blade.
+        </p>
+        </p>
+      </div>
+
+      <div id="W" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/darius/ability_0122_W1.webm">
+          </video>
+          <br><br><br><br><br>
+        <h1 style="font-size: 100px">W</h1>
+        <h2 style="font-size: 50px">
+          CRIPPLING STRIKE
+        </h2><br>
+        <p style="font-size: 30px">
+          Darius's next attack strikes an enemy's crucial artery. As they bleed out, their Move Speed is slowed.
+        </p>
+        </p>
+      </div>
+
+      <div id="E" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/darius/ability_0122_E1.webm">
+          </video>
+          <br>
+        <h1 style="font-size: 100px">E</h1>
+        <h2 style="font-size: 50px">
+          APPREHEND
+        </h2><br>
+        <p style="font-size: 30px">
+          Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him.
+        </p>
+        </p>
+      </div>
+
+      <div id="R" class="containerTab" style="display: none; background:black; height: 650px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>
+          <video style="float: right; height: 600px; width: auto;" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/darius/ability_0122_R1.webm">
+          </video>
+          <br>
+        <h1 style="font-size: 100px">R</h1>
+        <h2 style="font-size: 50px">
+          NOXIAN GUILLOTINE
+        </h2><br>
+        <p style="font-size: 30px">
+          Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed for a brief duration.
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+</body>
+
+<script>
+  var arr = ["img/darius/Darius_0.jpg", "img/darius/Darius_1.jpg", "img/darius/Darius_2.jpg", "img/darius/Darius_3.jpg", "img/darius/Darius_4.jpg",
+    "img/darius/Darius_5.jpg", "img/darius/Darius_6.jpg", "img/darius/Darius_7.jpg", "img/darius/Darius_8.jpg", "img/darius/Darius_9.jpg",
+    "img/darius/Darius_10.jpg", "img/darius/Darius_11.jpg"];
+  var btns = document.querySelectorAll('button');
+  var img = document.querySelectorAll('img')[0];
+
+  var num = 0;
+  btns[1].onclick = function(){
+    console.log(btns[1]);
+    num++;
+    if(num  > 11){
+      num = 0;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+  }
+  btns[0].onclick = function(){
+    console.log(btns[0]);
+    num--;
+    if(num  < 0){
+      num = 11;
+    }
+    img.src = arr[num];
+    console.log(img.src);
+
+  }
+</script>
+</html>

@@ -67,13 +67,16 @@ body {
   text-align: center;
   font-size: 25px;
   cursor: pointer;
-  color: white;
-  background: #e0e0e0;
+  color: #333;
+  background: #e8e8e8;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
   transition: all 0.3s ease;
 }
 .abilityExpandingBox:hover{
-  background: #b0b0b0;
-  transform: scale(1.05);
+  background: #c0c0c0;
+  color: #000;
+  transform: scale(1.02);
 }
 .expandingbox {
   float: left;

@@ -1,6 +1,6 @@
 # League of Legends College Website
 
-A fan-made League of Legends website built as a mini project (CP 3620).
+A fan-made League of Legends website built as a mini project.
 
 ## Pages
 
@@ -21,4 +21,4 @@ Design and content referenced from the official [League of Legends website](http
 
 ## Author
 
-201229 Sky Zhou
+Zhenyu Zhou
